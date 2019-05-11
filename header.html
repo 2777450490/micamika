@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>header</title>
+    <link rel="stylesheet" type="text/css" href="js/bootstrap-4.3.1/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.js-1.14.7/dist/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            font: 12px/24px "";
+            min-width: 1210px;
+        }
+        .h-30{
+            height: 30px;
+        }
+        .line-height-30{
+            line-height: 30px;
+        }
+        .h-99{
+            height: 99px;
+        }
+        .line-height-99{
+            line-height: 99px;
+        }
+        .h-62{
+            height: 62px;
+        }
+        .bg-555{
+            background: #555;
+        }
+        .h-62>a{
+            width: 160px;
+            height: inherit;
+            font: 16px/42px microsoft yahei;
+            color: #fff;
+            line-height: 62px;
+        }
+        .h-62>a:hover{
+            background: url("images/tab.jpg") no-repeat center/100% 100%;
+            color: #dc4f45;
+        }
+    </style>
+    <script>
+        function iframeLoad($dom){
+            $dom.height = 0;
+            $dom.height = $dom.contentWindow.document.body.scrollHeight;
+        }
+    </script>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="row h-30 m-0">
+            <div class="col-4 p-0 border-bottom"></div>
+            <div class="col-2 h-30 p-0 border-left border-right text-muted text-center line-height-30">
+                您好！请<a class="ml-1 mr-1 text-danger text-decoration-none line-height-30" href="#">登录</a>或
+                <a class="ml-1 text-danger text-decoration-none line-height-30" href="#">加入会员</a>
+            </div>
+            <div class="col-6 p-0 text-center border-bottom">
+                <a class="pl-2 ml-1 text-decoration-none text-muted line-height-30" href="#">礼金卡充值</a>
+                <a class="pl-2 ml-1 border-left text-decoration-none text-muted line-height-30" href="#">如何订购</a>
+                <a class="pl-2 ml-1 border-left text-decoration-none text-muted line-height-30" href="#">配送范围</a>
+                <a class="pl-2 ml-1 border-left text-decoration-none text-muted line-height-30" href="#">提前预约时间</a>
+                <a class="pl-2 border-left text-decoration-none text-muted line-height-30" href="#">关于米卡米卡蛋糕</a>
+            </div>
+        </div>
+        <div class="row h-99 m-0">
+            <div class="col-7 p-0"></div>
+            <div class="col-5 p-0 line-height-99">
+                <img src="images/code.png" alt="code" width="70" height="70"/>
+                <font size="4" face="Microsoft Yahei" color="#dc4f45">订购电话：400-606-7757</font>
+            </div>
+        </div>
+        <div class="row m-0">
+            <div class="col-12 p-0 h-62 text-center bg-555">
+                <a href="#" class="text-decoration-none d-inline-block">首页</a>
+                <a href="#" class="text-decoration-none d-inline-block">全部蛋糕</a>
+                <a href="#" class="text-decoration-none d-inline-block">下午茶19国</a>
+                <a href="#" class="text-decoration-none d-inline-block">企业专区</a>
+                <a href="#" class="text-decoration-none d-inline-block">蛋糕咨询</a>
+                <a href="#" class="text-decoration-none d-inline-block">会员中心</a>
+                <a href="#" class="text-decoration-none d-inline-block">关于米卡米卡</a>
+            </div>
+        </div>
+        <div id="content">
+            <iframe src="index.html" frameborder="0" scrolling="no" width="100%" onload="iframeLoad(this);" style="vertical-align:bottom;"></iframe>
+        </div>
+        <footer>
+            <iframe src="footer.html" frameborder="0" scrolling="no" width="100%" onload="iframeLoad(this);" style="vertical-align:bottom;"></iframe>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="js/bootstrap-4.3.1/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.js-1.14.7/dist/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-control-prev ,.carousel-control-next{
+            width: 45px;
+        }
+        .carousel-control-next-icon, .carousel-control-prev-icon{
+            width: inherit;
+            height: 82px;
+        }
+        .carousel-control-prev-icon{
+            background: url("images/but1.png") no-repeat right 0;
+        }
+        .carousel-control-next-icon{
+            background: url("images/but1.png") no-repeat left 0;
+        }
+        .slide-phone{
+            position: absolute;
+            width: 940px;
+            height: 92px;
+            bottom: -46px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            -webkit-box-shadow: 0 14px 33px white;
+            box-shadow: 0 14px 33px white;
+            -moz-box-shadow: 0 14px 33px white;
+            border-radius: 46px;
+            -webkit-border-radius: 46px;
+            -moz-border-radius: 46px;
+            background: url("images/bj1.png") no-repeat;
+        }
+        .slide-phone>a{
+            float: left;
+        }
+        .slide-phone>.item-1{
+            margin: 20px 0 0 43px;
+            color: white;
+            font: 18px/26px microsoft yahei;
+        }
+        .slide-phone>.item-2{
+            position: absolute;
+            left: 340px;
+            top: 30px;
+            font: 18px/32px microsoft yahei;
+            color: white;
+            padding-left: 33px;
+            background: url("images/main-1.png") no-repeat 0 -175px;
+        }
+        .slide-phone>.item-3 {
+            float: right;
+            font: 18px/36px microsoft yahei;
+            background: white;
+            color: #dc4f45;
+            width: 130px;
+            text-align: center;
+            margin: 30px 63px 0 0;
+        }
+        .slide-phone>.item-3:hover {
+            background: #e4857f;
+            color: white;
+            cursor: pointer;
+        }
+        .mt-10{
+            margin-top: 6em;
+        }
+        .font-0{
+            font-size: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <div class="carousel-inner">
+                <a class="carousel-item text-center active" href="#">
+                    <img src="images/mikamika1.jpg" alt="1slide" />
+                </a>
+                <a class="carousel-item text-center" href="#">
+                    <img src="images/mikamika2.jpg" alt="2slide" />
+                </a>
+                <a class="carousel-item text-center" href="#">
+                    <img src="images/mikamika3.jpg" alt="3slide" />
+                </a>
+                <a class="carousel-item text-center" href="#">
+                    <img src="images/mikamika4.jpg" alt="4slide" />
+                </a>
+                <a class="carousel-item text-center" href="#">
+                    <img src="images/mikamika5.jpg" alt="5slide" />
+                </a>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Prev</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            <div class="slide-phone">
+                <a href="#" class="item-1 text-decoration-none">企业订购<br/>8.8折起</a>
+                <a href="#" class="item-2 text-decoration-none">400-606-7757</a>
+                <a href="#" class="item-3 text-decoration-none">立即订购</a>
+            </div>
+        </div>
+
+        <div class="mt-10 mb-1 text-center">
+            <img src="images/back1.jpg" alt="back1.jpg" />
+        </div>
+        <div class="text-center mb-4 font-0">
+            <img src="images/bacj-b1.jpg" alt="back-b1.jpg" />
+            <img src="images/back-b2.jpg" alt="back-b2.jpg" />
+            <img src="images/back-b3.jpg" alt="back-b3.jpg" />
+            <img src="images/back-b4.jpg" alt="back-b4.jpg" />
+        </div>
+    </div>
+</body>
+</html>
